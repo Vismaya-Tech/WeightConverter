@@ -19,6 +19,7 @@ function updateChange() {
             inputel.value = "";
         }, 2000);
     } else {
+        errorel.display="none";
         const kg = (value / 2.2).toFixed(2);
         resultSpan.innerText = kg;
         clearTimeout(resulttimeout);
